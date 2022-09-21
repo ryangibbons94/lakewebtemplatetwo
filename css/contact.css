@@ -20,7 +20,7 @@
     font-weight: 900;
     font-size: min(9vw, 2.4em);
     line-height: 1.20833333;
-    color: #1A1A1A;
+    color: #1a1a1a;
     position: relative;
     margin-bottom: 0.875em;
     text-align: left;
@@ -61,6 +61,7 @@
     border: none;
     border-bottom: 0.0625em solid #d4d4d4;
     background: transparent;
+    padding-left: 1.25em;
   }
   #form #contact .input-group input:focus {
     border: 0.0625em solid var(--primary);
@@ -104,7 +105,7 @@
     font-size: 1em;
     line-height: 1.75;
     color: #fff;
-    opacity: .9;
+    opacity: 0.9;
     text-decoration: none;
     display: block;
   }
@@ -166,7 +167,7 @@
   #form #contact .input-group textarea {
     border-bottom: none;
     position: relative;
-    transition: padding .3s;
+    transition: padding 0.3s;
     background: transparent;
   }
   #form #contact .input-group .hover-box {
@@ -180,7 +181,7 @@
     bottom: -0.0625em;
     left: 0;
     z-index: 10;
-    transition: height .3s, border .3s;
+    transition: height 0.3s, border 0.3s;
     z-index: -1;
   }
   #form #contact .textarea:hover .hover-box {
