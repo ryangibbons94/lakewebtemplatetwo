@@ -1,0 +1,475 @@
+/*-- -------------------------- -->
+<---       Side By Side         -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0em) {
+  #sbs-9976 {
+    font-family: "Roboto", "Arial", sans-serif;
+    /* 40px - 100px */
+    padding: clamp(2.5em, 7.9vw, 6.25em) 1rem;
+  }
+  #sbs-9976 .cs-container {
+    width: 100%;
+    max-width: 67.5em;
+    margin: auto;
+  }
+  #sbs-9976 .cs-left {
+    width: 100%;
+    max-width: 30em;
+    margin: 0 auto 2.5em;
+    position: relative;
+    display: block;
+    /* width divided by height */
+    aspect-ratio: 0.73076923;
+  }
+  #sbs-9976 .cs-left img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+  #sbs-9976 .cs-right {
+    margin: auto;
+    max-width: 30em;
+  }
+  #sbs-9976 .cs-topper {
+    /* 13px - 16px */
+    font-size: clamp(0.8125em, 1.4vw, 1rem);
+    line-height: 1.2em;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    /* 8px - 16px */
+    margin-bottom: clamp(0.5rem, 1.05vw, 1rem);
+    color: var(--primary);
+    display: block;
+  }
+  #sbs-9976 .cs-title {
+    /* 31px - 49px */
+    font-size: clamp(1.9375rem, 5.08vw, 3.0625rem);
+    font-weight: 900;
+    line-height: 1.2em;
+    text-align: left;
+    max-width: 38.75rem;
+    /* 16px - 32px */
+    margin: 0 auto clamp(1rem, 5vw, 2rem);
+    color: #1a1a1a;
+    position: relative;
+  }
+  #sbs-9976 .cs-text {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: left;
+    width: 100%;
+    max-width: 36.875rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    color: #1a1a1a;
+    /* the last p tag has a 32px margin for proper spacing between the button */
+  }
+  #sbs-9976 .cs-text:last-of-type {
+    margin-bottom: 2rem;
+  }
+  #sbs-9976 .cs-list {
+    margin: 0 0 2rem;
+    padding-left: 3.75rem;
+  }
+  #sbs-9976 .cs-li {
+    list-style: none;
+    font-size: 0.875rem;
+    line-height: 1.5em;
+    margin-bottom: 1rem;
+    color: #1a1a1a;
+    position: relative;
+  }
+  #sbs-9976 .cs-li:last-of-type {
+    margin-bottom: 0;
+  }
+  #sbs-9976 .cs-number {
+    /* absolutely position it to the top of the li so if you need two lines
+                 the number will stay at the top */
+    font-size: 0.9375rem;
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 50%;
+    background: var(--primary);
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: absolute;
+    top: -0.25rem;
+    left: -2.5rem;
+  }
+  #sbs-9976 .cs-button-solid {
+    font-size: 1rem;
+    line-height: 2.875rem;
+    text-decoration: none;
+    font-weight: 700;
+    margin: auto;
+    color: #fff;
+    padding: 0 1.5rem;
+    background-color: var(--primary);
+    border-radius: 0.25rem;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+  }
+  #sbs-9976 .cs-button-solid:before {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 0%;
+    background: #000;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 0.25rem;
+    -webkit-transition: width 0.3s;
+    transition: width 0.3s;
+  }
+  #sbs-9976 .cs-button-solid:hover:before {
+    width: 100%;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48em) {
+  #sbs-9976 .cs-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  #sbs-9976 .cs-left {
+    /* 284px - 483px */
+    width: clamp(17.75em, 40vw, 30.1875em);
+    /* 506px - 658px */
+    height: clamp(31.625em, 60vw, 41.125em);
+    margin: 0 1.75em 0 0;
+    /* prevents flexbox from squishing it */
+    -webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none;
+  }
+  #sbs-9976 .cs-right {
+    max-width: 33em;
+    margin: 0;
+  }
+}
+/*-- -------------------------- -->
+  <---       Side By Side         -->
+  <--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0em) {
+  #sbs-9976-r {
+    font-family: "Roboto", "Arial", sans-serif;
+    /* 40px - 100px */
+    padding: clamp(2.5em, 7.9vw, 6.25em) 1rem;
+  }
+  #sbs-9976-r .cs-container {
+    width: 100%;
+    max-width: 67.5em;
+    margin: auto;
+  }
+  #sbs-9976-r .cs-left {
+    width: 100%;
+    max-width: 30em;
+    margin: 0 auto 2.5em;
+    position: relative;
+    display: block;
+    /* width divided by height */
+    aspect-ratio: 0.73076923;
+  }
+  #sbs-9976-r .cs-left img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+  #sbs-9976-r .cs-right {
+    margin: auto;
+    max-width: 30em;
+  }
+  #sbs-9976-r .cs-topper {
+    /* 13px - 16px */
+    font-size: clamp(0.8125em, 1.4vw, 1rem);
+    line-height: 1.2em;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    /* 8px - 16px */
+    margin-bottom: clamp(0.5rem, 1.05vw, 1rem);
+    color: var(--primary);
+    display: block;
+  }
+  #sbs-9976-r .cs-title {
+    /* 31px - 49px */
+    font-size: clamp(1.9375rem, 5.08vw, 3.0625rem);
+    font-weight: 900;
+    line-height: 1.2em;
+    text-align: left;
+    max-width: 38.75rem;
+    /* 16px - 32px */
+    margin: 0 auto clamp(1rem, 5vw, 2rem);
+    color: #1a1a1a;
+    position: relative;
+  }
+  #sbs-9976-r .cs-text {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: left;
+    width: 100%;
+    max-width: 28.875rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    color: #1a1a1a;
+    /* the last p tag has a 32px margin for proper spacing between the button */
+  }
+  #sbs-9976-r .cs-text:last-of-type {
+    margin-bottom: 2rem;
+  }
+  #sbs-9976-r .cs-list {
+    margin: 0 0 2rem;
+    padding-left: 3.75rem;
+  }
+  #sbs-9976-r .cs-li {
+    list-style: none;
+    font-size: 0.875rem;
+    line-height: 1.5em;
+    margin-bottom: 1rem;
+    color: #1a1a1a;
+    position: relative;
+  }
+  #sbs-9976-r .cs-li:last-of-type {
+    margin-bottom: 0;
+  }
+  #sbs-9976-r .cs-number {
+    /* absolutely position it to the top of the li so if you need two lines
+                 the number will stay at the top */
+    font-size: 0.9375rem;
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 50%;
+    background: var(--primary);
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: absolute;
+    top: -0.25rem;
+    left: -2.5rem;
+  }
+  #sbs-9976-r .cs-button-solid {
+    font-size: 1rem;
+    line-height: 2.875rem;
+    text-decoration: none;
+    font-weight: 700;
+    margin: auto;
+    color: #fff;
+    padding: 0 1.5rem;
+    background-color: var(--primary);
+    border-radius: 0.25rem;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+  }
+  #sbs-9976-r .cs-button-solid:before {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 0%;
+    background: #000;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 0.25rem;
+    -webkit-transition: width 0.3s;
+    transition: width 0.3s;
+  }
+  #sbs-9976-r .cs-button-solid:hover:before {
+    width: 100%;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48em) {
+  #sbs-9976-r .cs-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  #sbs-9976-r .cs-left {
+    /* 284px - 483px */
+    width: clamp(17.75em, 40vw, 30.1875em);
+    /* 506px - 658px */
+    height: clamp(31.625em, 60vw, 41.125em);
+    margin: 0 0 0 1.75em;
+    /* prevents flexbox from squishing it */
+    -webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none;
+    /* pushes it to the right in the 2nd position */
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+  #sbs-9976-r .cs-right {
+    max-width: 33em;
+    margin: 0;
+  }
+  #sbs-9976-r .cs-text {
+    margin-left: 0;
+  }
+}
+/*-- -------------------------- -->
+<---    Final Call To Action    -->
+<--- -------------------------- -*/
+/* Mobile */
+@media only screen and (min-width: 0em) {
+  #cta {
+    position: relative;
+    padding: 3.125em 0;
+  }
+  #cta:before {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #cta .container {
+    text-align: center;
+  }
+  #cta picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+  }
+  #cta picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  #cta .title {
+    font-weight: 900;
+    font-size: min(9vw, 3em);
+    line-height: 1.20833333;
+    color: #fff;
+    position: relative;
+    margin-bottom: 0.75em;
+    text-align: center;
+  }
+  #cta p {
+    color: #fff;
+    text-align: center;
+    opacity: 1;
+    margin: auto;
+    margin-bottom: 2em;
+    width: 96%;
+    max-width: 33.22222222em;
+  }
+}
+/* Small Desktop */
+@media only screen and (min-width: 64em) {
+  #cta {
+    padding: 10.5em 0;
+  }
+}
+/* Large Desktop */
+@media only screen and (min-width: 1300px) {
+  #cta {
+    position: relative;
+    margin-top: 6.25em;
+  }
+  #cta:before {
+    display: none;
+  }
+  #cta:after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 69.25em;
+    width: 125em;
+    background: url("../images/cta-squares.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 1;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -3;
+  }
+  #cta .container {
+    width: 90.0625%;
+    margin: auto;
+  }
+  #cta picture {
+    width: 90.0625%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #cta picture:before {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0em) {
+  body.dark-mode #cta:after {
+    display: none;
+  }
+}

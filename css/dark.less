@@ -1,0 +1,195 @@
+/*-- -------------------------- -->
+<---      Core Dark Styles      -->
+<--- -------------------------- -*/
+
+/* Mobile */
+@media only screen and (min-width: 0em) {
+  // Dark Mode Color Scheme
+  :root {
+    --dark: #082032;
+    --medium: #2c394b;
+    --accent: #334756;
+  }
+
+  body.dark-mode {
+    background-color: var(--dark);
+
+    p,
+    li,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: #fff;
+    }
+
+    #services-9573 {
+      .cs-title {
+        color: #fff !important;
+      }
+      .cs-box {
+        background-color: var(--accent);
+        .cs-heading2 {
+          color: #fff !important;
+          background-color: var(--accent);
+        }
+      }
+      .cs-content-group {
+        background: -moz-linear-gradient(
+          top,
+          var(--accent) 100%,
+          var(--accent) 10%
+        ); /* FF3.6-15 */
+        background: -webkit-linear-gradient(
+          top,
+          var(--accent) 100%,
+          var(--accent) 10%
+        ); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(
+          to bottom,
+          var(--accent) 100%,
+          var(--accent) 10%
+        ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        p {
+          color: #fff;
+        }
+      }
+    }
+
+    #sbs-7843-r {
+      .cs-title {
+        color: #fff;
+      }
+      .cs-text {
+        color: #fff;
+      }
+    }
+    #sbs-7843 {
+      .cs-title {
+        color: #fff;
+      }
+      .cs-text {
+        color: #fff;
+      }
+    }
+
+    #sbs-9976-r {
+      .cs-title {
+        color: #fff;
+      }
+      .cs-text {
+        color: #fff;
+      }
+      .cs-li {
+        color: #fff;
+      }
+    }
+    #sbs-9976 {
+      .cs-title {
+        color: #fff;
+      }
+      .cs-text {
+        color: #fff;
+      }
+      .cs-li {
+        color: #fff;
+      }
+    }
+
+    // hide all light classes
+    .light {
+      display: none;
+    }
+
+    // show all dark classes
+    .dark {
+      display: block !important;
+    }
+  }
+
+  .dark {
+    display: none;
+  }
+}
+
+/*-- -------------------------- -->
+<---      Dark Mode Toggle      -->
+<--- -------------------------- -*/
+
+/* Mobile */
+@media only screen and (min-width: 0em) {
+  // Dark Mode Toggle Switch Animation
+  body.dark-mode {
+    #dark-mode-toggle {
+      .sun {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+      }
+
+      .moon {
+        transform: translate(-50%, -150%);
+        opacity: 0;
+      }
+    }
+  }
+
+  // Toggle
+  #dark-mode-toggle {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 60/16em;
+    width: 48/16em;
+    height: 48/16em;
+    background: transparent;
+    border: none;
+    overflow: hidden;
+    padding: 0;
+
+    //center image inside button
+    img,
+    svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 25/16em;
+      height: 25/16em;
+      pointer-events: none;
+    }
+
+    .moon {
+      z-index: 2;
+      // Transition properties
+      transition: transform 0.3s, opacity 0.3s, fill 0.3s;
+      fill: #000; // --> change the color of the moon graphic based ont he background being lighter or darker
+    }
+
+    .sun {
+      z-index: 1;
+      // Transition property
+      transform: translate(-50%, 100%);
+      opacity: 0;
+      transition: transform 0.3s, opacity 0.3s;
+    }
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 64em) {
+  #dark-mode-toggle {
+    position: relative;
+    top: auto;
+    right: auto;
+    transform: none;
+    margin-left: 30/16em;
+    margin-bottom: 0/16em;
+
+    .moon {
+      fill: #fff;
+    }
+  }
+}

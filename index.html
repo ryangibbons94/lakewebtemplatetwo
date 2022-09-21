@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Swap our for actual link-->
+    <link rel="canonical" href="https://www.company.com" />
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!--Social Media Display-->
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="/images/social.jpg" />
+    <meta property="og:image:secure_url" content="/images/social.jpg" />
+
+    <!--Favicons-->
+    <!--Use https://realfavicongenerator.net/ to generate and download your favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon-32x32.png?v1"
+    />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Preload -->
+    <link rel="preload" as="image" href="/images/lake-landing-m.webp" />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="fonts/roboto-v29-latin-regular.woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="fonts/roboto-v29-latin-700.woff2"
+      crossorigin
+    />
+
+    <link rel="stylesheet" href="/css/critical.css" />
+    <!--  <--- Only above the fold css-->
+    <link rel="stylesheet" href="/css/root.css" />
+    <link rel="stylesheet" href="/css/dark.css" />
+
+    <!--Defer loading the whole page css-->
+    <link
+      rel="stylesheet"
+      href="/css/local.css"
+      media="print"
+      onload="this.media='all'; this.onload=null;"
+    />
+
+    <!--If the user has javascript disbaled, load this stylesheet-->
+    <noscript>
+      <link rel="stylesheet" href="/css/local.css" />
+    </noscript>
+
+    <title>Company Name | What They Do | Town and State</title>
+  </head>
+  <body>
+    <!--Screen reader skip main nav-->
+    <a class="skip" aria-label="skip to main content" href="#main"
+      >Click To Skip To Main Content</a
+    >
+
+    <!-- ============================================ -->
+    <!--                 Navigation                   -->
+    <!-- ============================================ -->
+
+    <div id="navigation">
+      <div aria-hidden="true" class="background-color-div">
+        <!--This div is used to overcome a z-index issue where the open
+                #navbar-menu is on top of the #navigation. This bar places itself 
+                the #navbar-menu so that menu appears behind the #navigation
+            -->
+      </div>
+      <div class="container">
+        <!--Logo - Get SVGs if you can.  I use fiverr to get png's turned into SVGs. Highly recommend it, worth the $20 - get a light and dark version-->
+        <a
+          class="logo"
+          aria-label="click to go to home page"
+          href="/index.html"
+        >
+          <!--Light Colored Logo, remove .dark image tag and the .light class if you don't have a dark and light version -->
+          <img
+            class="light"
+            aria-hidden="true"
+            src="/images/logo-light.png"
+            decoding="async"
+            alt="logo"
+            width="221"
+            height="66"
+          />
+
+          <!--Dark Colored Logo-->
+          <img
+            class="dark"
+            aria-hidden="true"
+            src="/images/logo-blue.png"
+            decoding="async"
+            loading="lazy"
+            alt="logo"
+            width="221"
+            height="66"
+          />
+        </a>
+
+        <!--Main Nav-->
+        <nav id="navbar-menu">
+          <ul>
+            <li><a class="active" href="/index.html">Home</a></li>
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="/projects.html">Services</a></li>
+            <li><a href="#services-9573">Portfolio</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!--Dark Mode toggle-->
+        <button id="dark-mode-toggle">
+          <!--Moon is an inline SVG so you can edit the color if needed-->
+          <svg
+            class="moon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 480 480"
+            style="enable-background: new 0 0 480 480"
+            xml:space="preserve"
+          >
+            <path
+              d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"
+            />
+          </svg>
+          <img
+            class="sun"
+            aria-hidden="true"
+            src="/images/sun.svg"
+            decoding="async"
+            alt="moon"
+            width="15"
+            height="15"
+          />
+        </button>
+
+        <!--Mobile Nav toggle-->
+        <button class="hamburger-menu">
+          <span aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+
+    <main>
+      <!-- ============================================ -->
+      <!--                    LANDING                   -->
+      <!-- ============================================ -->
+
+      <section id="hero">
+        <div class="hero-content">
+          <div class="heroText">
+            <h1 id="home-h">
+              Expert Small Business Web Design and Development
+            </h1>
+            <p>
+              We offer top notch website design, development, maintenance, and
+              hosting at an unbeatable price.
+            </p>
+            <a
+              class="button-solid"
+              href="https://calendly.com/ariseconstructions"
+              target="_blank"
+              rel="noopener"
+            >
+              Get Started Now
+            </a>
+          </div>
+        </div>
+        <picture>
+          <source
+            media="(max-width: 600px)"
+            srcset="/images/lake-landing-m.jpg"
+          />
+          <source
+            media="(min-width: 601px)"
+            srcset="/images/lake-landing.jpg"
+          />
+          <img
+            aria-hidden="true"
+            decoding="async"
+            src="/images/landing.jpg"
+            alt="new home"
+            width="275"
+            height="132"
+          />
+        </picture>
+      </section>
+
+      <!-- ============================================ -->
+      <!--                  Services                    -->
+      <!-- ============================================ -->
+
+      <section id="services" class="services">
+        <!-- Get Icons From flaticon.com -->
+        <div class="card">
+          <picture>
+            <img
+              aria-hidden="true"
+              decoding="async"
+              src="/images/service1.svg"
+              alt="appliance"
+              width="48"
+              height="48"
+            />
+          </picture>
+          <h2>Design</h2>
+          <p>
+            Clean, modern design focused on attracting and converting customers
+            for your business.
+          </p>
+        </div>
+        <div class="card">
+          <picture>
+            <img
+              aria-hidden="true"
+              decoding="async"
+              src="/images/service2.svg"
+              alt="appliance"
+              width="48"
+              height="48"
+            />
+          </picture>
+          <h2>Development</h2>
+          <p>
+            100% custom-coded website that will outperform any page builder
+            website.
+          </p>
+        </div>
+        <div class="card">
+          <picture>
+            <img
+              aria-hidden="true"
+              decoding="async"
+              src="/images/service3.svg"
+              alt="appliance"
+              width="48"
+              height="48"
+            />
+          </picture>
+          <h2>Maintenance</h2>
+          <p>
+            Standard package includes hosting your website as well as unlimited
+            lifetime edits.
+          </p>
+        </div>
+      </section>
+
+      <!-- ============================================ -->
+      <!--                   About                      -->
+      <!-- ============================================ -->
+
+      <section id="sidebyside" class="sidebyside">
+        <div class="container">
+          <div class="content">
+            <h2 class="title">WHAT WE DO</h2>
+            <p>
+              Custom coded, standard 5 page small business websites for $0 down
+              and just $100 a month. Every line of code is custom written to the
+              highest possible performance.
+            </p>
+            <p>
+              <strong>With Us You Get:</strong>
+            </p>
+            <ul>
+              <li>
+                <img
+                  aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
+                  src="/images/check.svg"
+                  alt="check mark"
+                  width="20"
+                  height="20"
+                />
+                <span>Website Design & Development</span>
+              </li>
+              <li>
+                <img
+                  aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
+                  src="/images/check.svg"
+                  alt="check mark"
+                  width="20"
+                  height="20"
+                />
+                <span>Website Hosting Included</span>
+              </li>
+              <li>
+                <img
+                  aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
+                  src="/images/check.svg"
+                  alt="check mark"
+                  width="20"
+                  height="20"
+                />
+                <span>Unlimited Edits</span>
+              </li>
+              <li>
+                <img
+                  aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
+                  src="/images/check.svg"
+                  alt="check mark"
+                  width="20"
+                  height="20"
+                />
+                <span
+                  >Fully Responsive Website Perfect for Mobile or Desktop</span
+                >
+              </li>
+              <li>
+                <img
+                  aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
+                  src="/images/check.svg"
+                  alt="check mark"
+                  width="20"
+                  height="20"
+                />
+                <span>Mobile-First Design</span>
+              </li>
+            </ul>
+            <p>
+              We specialize in custom coded websites for small businesses
+              created with a mobile-first design. We know that more than 60% of
+              all web traffic comes from mobile devices so we ensure your
+              customers get a quality experience no matter what device they are
+              on.
+            </p>
+            <a class="button-solid" href="/about.html"
+              >More About Our Services</a
+            >
+          </div>
+          <picture class="image-box">
+            <source media="(max-width: 600px)" srcset="/images/computer.jpg" />
+            <source media="(min-width: 601px)" srcset="/images/computer.jpg" />
+            <img
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="/images/computer.jpg"
+              alt="cabinets"
+              width="400"
+              height="662"
+            />
+          </picture>
+        </div>
+      </section>
+
+      <!-- ============================================ -->
+      <!--          Extra Content For Ranking           -->
+      <!-- ============================================ -->
+
+      <section id="sidebyside-reverse">
+        <div class="container">
+          <div class="content">
+            <h2 class="title">ABOUT US</h2>
+            <p>
+              We are a family-owned small business web design and development
+              agency specializing in custom-coded websites for small businesses.
+            </p>
+            <!-- <p>
+              <strong>A list if you need it:</strong>
+            </p>
+            <ul>
+              <li>
+                <img
+                  aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
+                  src="/images/check.svg"
+                  alt="check mark"
+                  width="20"
+                  height="20"
+                />
+                <span>List item about something</span>
+              </li>
+              <li>
+                <img
+                  aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
+                  src="/images/check.svg"
+                  alt="check mark"
+                  width="20"
+                  height="20"
+                />
+                <span>List item about something</span>
+              </li>
+              <li>
+                <img
+                  aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
+                  src="/images/check.svg"
+                  alt="check mark"
+                  width="20"
+                  height="20"
+                />
+                <span>List item about something</span>
+              </li>
+              <li>
+                <img
+                  aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
+                  src="/images/check.svg"
+                  alt="check mark"
+                  width="20"
+                  height="20"
+                />
+                <span>List item about something</span>
+              </li>
+              <li>
+                <img
+                  aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
+                  src="/images/check.svg"
+                  alt="check mark"
+                  width="20"
+                  height="20"
+                />
+                <span>List item about something</span>
+              </li>
+            </ul> -->
+            <p>
+              We pride ourselves on providing big business services at a small
+              business price. We cater to the small business market to bring
+              high quality, high performing websites at a a price that can't be
+              beat.
+            </p>
+            <a class="button-solid" href="/contact.html">More About Us</a>
+          </div>
+          <picture class="image-box">
+            <source
+              media="(max-width: 600px)"
+              srcset="/images/cabinets2-m.jpg"
+            />
+            <source media="(min-width: 601px)" srcset="/images/cabinets2.jpg" />
+            <img
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="/images/cabinets2.jpg"
+              alt="cabinets"
+              width="400"
+              height="662"
+            />
+          </picture>
+        </div>
+      </section>
+
+      <!-- ============================================ -->
+      <!--                 Side By Side                 -->
+      <!-- ============================================ -->
+
+      <section id="sbs-7843">
+        <div class="cs-container">
+          <!-- Left Image Section -->
+          <picture class="cs-left" aria-hidden="true">
+            <source
+              media="(max-width: 600px)"
+              srcset="
+                https://csimg.nyc3.digitaloceanspaces.com/SideBySide/city.jpg
+              "
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="
+                https://csimg.nyc3.digitaloceanspaces.com/SideBySide/city.jpg
+              "
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/city.jpg"
+              alt="city"
+              width="347"
+              height="604"
+            />
+          </picture>
+          <!-- Right Content Section-->
+          <div class="cs-right">
+            <span class="cs-topper">Co-Owner/Lead Developer</span>
+            <h2 class="cs-title">Ryan G.</h2>
+            <p class="cs-text">
+              Ryan is an experienced software developer with the skills and
+              knowledge to bring any idea to life.
+            </p>
+            <a
+              class="button-solid"
+              aria-label="read more about our services"
+              href=""
+              >About Us</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================ -->
+      <!--             Side By Side Reverse             -->
+      <!-- ============================================ -->
+
+      <section id="sbs-7843-r">
+        <div class="cs-container">
+          <!-- Left Image Section -->
+          <picture class="cs-left" aria-hidden="true">
+            <source
+              media="(max-width: 600px)"
+              srcset="
+                https://csimg.nyc3.digitaloceanspaces.com/SideBySide/city.jpg
+              "
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="
+                https://csimg.nyc3.digitaloceanspaces.com/SideBySide/city.jpg
+              "
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/city.jpg"
+              alt="city"
+              width="347"
+              height="604"
+            />
+          </picture>
+          <!-- Right Content Section-->
+          <div class="cs-right">
+            <span class="cs-topper">Co-Owner/Lead Designer</span>
+            <h2 class="cs-title">Meaghan G.</h2>
+            <p class="cs-text">
+              Meaghan is the creative mind behind Lake Web Design. She handles
+              all website designs, logo creation and any requests for design
+              updates for the life of the website.
+            </p>
+            <a
+              class="button-solid"
+              aria-label="read more about our services"
+              href=""
+              >About Us</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================ -->
+      <!--                   Services                   -->
+      <!-- ============================================ -->
+
+      <section id="services-9573">
+        <div class="container">
+          <h2 class="cs-title">OUR PORTFOLIO</h2>
+
+          <ul class="cs-card-group">
+            <li class="cs-item">
+              <picture class="cs-picture" aria-hidden="true">
+                <source media="(max-width: 600px)" srcset="../images/cup.jpg" />
+                <source media="(min-width: 601px)" srcset="../images/cup.jpg" />
+                <img
+                  loading="lazy"
+                  decoding="https://csimg.nyc3.digitaloceanspaces.com/Services/living-room.jpg"
+                  alt="living room"
+                />
+              </picture>
+              <div class="cs-box">
+                <h2 class="cs-heading2">Custom Creations</h2>
+                <div class="cs-content-group">
+                  <p class="cs-item-p">
+                    Website for a small business specializing in creating custom
+                    items.
+                  </p>
+                  <a
+                    class="cs-link"
+                    target="_blank"
+                    aria-label="read more about foyers"
+                    href="https://www.customcreationsbyangela.com/"
+                    >View Site</a
+                  >
+                </div>
+              </div>
+            </li>
+            <li class="cs-item">
+              <picture class="cs-picture" aria-hidden="true">
+                <source
+                  media="(max-width: 600px)"
+                  srcset="
+                    https://csimg.nyc3.digitaloceanspaces.com/Services/posh-bathroom-m.jpg
+                  "
+                />
+                <source
+                  media="(min-width: 601px)"
+                  srcset="
+                    https://csimg.nyc3.digitaloceanspaces.com/Services/posh-bathroom.jpg
+                  "
+                />
+                <img
+                  loading="lazy"
+                  decoding="https://csimg.nyc3.digitaloceanspaces.com/Services/posh-bathroom.jpg"
+                  alt="living room"
+                  width="348"
+                  height="433"
+                />
+              </picture>
+              <div class="cs-box">
+                <h2 class="cs-heading2">Your Site Here</h2>
+                <div class="cs-content-group">
+                  <p class="cs-item-p">
+                    Interested in a brand new, modern, fast, accessible and
+                    sleek website for your small business, click below to get
+                    started.
+                  </p>
+                  <a
+                    class="cs-link"
+                    aria-label="read more about foyers"
+                    href="./contact.html"
+                    >Contact Us</a
+                  >
+                </div>
+              </div>
+            </li>
+            <li class="cs-item">
+              <picture class="cs-picture" aria-hidden="true">
+                <source
+                  media="(max-width: 600px)"
+                  srcset="
+                    https://csimg.nyc3.digitaloceanspaces.com/Services/living-room-m.jpg
+                  "
+                />
+                <source
+                  media="(min-width: 601px)"
+                  srcset="
+                    https://csimg.nyc3.digitaloceanspaces.com/Services/living-room.jpg
+                  "
+                />
+                <img
+                  loading="lazy"
+                  decoding="https://csimg.nyc3.digitaloceanspaces.com/Services/living-room.jpg"
+                  alt="living room"
+                  width="348"
+                  height="433"
+                />
+              </picture>
+              <div class="cs-box">
+                <h2 class="cs-heading2">Your Site Here</h2>
+                <div class="cs-content-group">
+                  <p class="cs-item-p">
+                    Interested in a brand new, modern, fast, accessible and
+                    sleek website for your small business, click below to get
+                    started.
+                  </p>
+                  <a
+                    class="cs-link"
+                    aria-label="read more about foyers"
+                    href="./contact.html"
+                    >Contact Us</a
+                  >
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ============================================ -->
+      <!--             Final Call to Action             -->
+      <!-- ============================================ -->
+
+      <section id="cta">
+        <div class="container">
+          <h2 class="title">
+            Got Questions? <br />
+            We've Got Answers
+          </h2>
+          <p>
+            Click below whether you are ready to get started, interested in
+            hearing more, or just want to say hi.
+          </p>
+          <a href="/contact.html" class="button-solid">Contact Us Now</a>
+        </div>
+        <picture>
+          <source media="(max-width: 600px)" srcset="/images/lake-cta.jpg" />
+          <source media="(min-width: 601px)" srcset="/images/lake-cta.jpg" />
+          <img
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="/images/lake-cta.jpg"
+            alt="kitchen cabinets"
+            width="1920"
+            height="1280"
+          />
+        </picture>
+      </section>
+    </main>
+
+    <!-- ============================================ -->
+    <!--                     FOOTER                   -->
+    <!-- ============================================ -->
+
+    <footer id="footer">
+      <div class="container">
+        <div class="left-section">
+          <a class="logo" href="/index.html"
+            ><img
+              loading="lazy"
+              decoding="async"
+              src="/images/logo-light.png"
+              alt="logo"
+              width="264"
+              height="78"
+          /></a>
+        </div>
+        <div class="right-section">
+          <div class="lists">
+            <ul>
+              <li><h2>Information</h2></li>
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/about.html">About Us</a></li>
+              <li><a href="/projects.html">Services</a></li>
+              <li><a href="/testimonials.html">Portfolio</a></li>
+              <li><a href="/contact.html">Contact</a></li>
+            </ul>
+            <ul>
+              <li><h2>Services</h2></li>
+              <li>Website Design</li>
+              <li>Website Development</li>
+              <li>Logo Creation</li>
+              <li>Website Maintenance</li>
+            </ul>
+            <ul>
+              <li><h2>Contact</h2></li>
+              <li>
+                <a href="/contact.html">Lake County, FL</a>
+              </li>
+              <li><a href="tel:352-409-4961">T: (352) 409-4961</a></li>
+              <li><a href="mailto:email@email.com">Click to Email</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="credit">
+        <span>Designed and Hand Coded by</span>
+        <a href="/index.html" rel="noopener">Lake Web Design</a>
+        <span class="copyright"> Copyright 2021 - Present</span>
+      </div>
+    </footer>
+
+    <script defer src="/nav.js"></script>
+    <script defer src="/dark.js"></script>
+    <!--
+        This script adds a class to the body after scrolling 100px
+        and we used these body.scroll styles to create some on scroll 
+        animations with the navbar
+    -->
+    <script defer>
+      document.addEventListener("scroll", (e) => {
+        const scroll = document.documentElement.scrollTop;
+        if (scroll >= 100) {
+          document.querySelector("body").classList.add("scroll");
+        } else {
+          document.querySelector("body").classList.remove("scroll");
+        }
+      });
+    </script>
+  </body>
+</html>
