@@ -210,7 +210,7 @@
     background: var(--medium);
   }
   body.dark-mode #services picture {
-    background: var(--primaryDark);
+    background: var(--primary);
   }
   body.dark-mode #services h2 {
     color: #fff;

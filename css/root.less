@@ -6,9 +6,10 @@
 @media only screen and (min-width: 0em) {
   // Website colors
   :root {
-    --primary: #ffba19;
+    --primary: #7e849b;
     --primaryShade: #ffd675;
-    --primaryDark: #805d0d;
+    --secondary: #dfba74;
+    --primaryDark: #dfba74;
     --bodyText: #1a1a1a;
   }
 
@@ -118,7 +119,7 @@
     background-color: var(--primary);
 
     // Transition Properties
-    color: #000;
+    color: #fff;
     transition: color 0.3s;
     transition-delay: 0.1s;
 
@@ -138,7 +139,7 @@
       top: 0;
       left: 0;
       z-index: -1;
-      background-color: #000;
+      background-color: var(--bodyText);
 
       //Transition properties
       width: 0;
@@ -366,7 +367,7 @@
                 position: absolute;
                 display: block;
                 height: 8/19em;
-                background: var(--primary);
+                background: var(--secondary);
                 opacity: 1;
                 bottom: 5/19em;
                 border-radius: 4/19em;
@@ -638,7 +639,7 @@
               }
 
               &.active {
-                color: var(--primary);
+                color: var(--secondary);
               }
             }
           }
@@ -676,7 +677,7 @@
               }
 
               &.active {
-                color: var(--primary);
+                color: var(--secondary);
               }
             }
           }
@@ -884,7 +885,7 @@
               display: block;
               height: 2/18em;
               width: 97/18em;
-              background: #eebe76;
+              background: var(--primary);
               opacity: 1;
               bottom: -16/18em;
               left: 0;
