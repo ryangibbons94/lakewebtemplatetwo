@@ -139,7 +139,7 @@
     position: relative;
     display: block;
     /* width divided by height */
-    aspect-ratio: 1.10954064;
+    aspect-ratio: 1;
     /* Pushes it down in the 2nd position */
     order: 2;
     margin-top: 1em;
