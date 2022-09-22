@@ -14,6 +14,15 @@
   body.dark-mode {
     background-color: var(--dark);
 
+    #navigation {
+      .logo {
+        img {
+          filter: invert(100%) sepia(4%) saturate(10%) hue-rotate(325deg)
+            brightness(114%) contrast(100%);
+        }
+      }
+    }
+
     p,
     li,
     h1,

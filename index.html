@@ -148,7 +148,7 @@
             aria-hidden="true"
             src="/images/sun.svg"
             decoding="async"
-            alt="moon"
+            alt="sun"
             width="15"
             height="15"
           />
@@ -189,17 +189,17 @@
         <picture>
           <source
             media="(max-width: 600px)"
-            srcset="/images/lake-landing-m.jpg"
+            srcset="/images/lake-landing-m-min.jpg"
           />
           <source
             media="(min-width: 601px)"
-            srcset="/images/lake-landing.jpg"
+            srcset="/images/lake-landing-min.jpg"
           />
           <img
             aria-hidden="true"
             decoding="async"
-            src="/images/landing.jpg"
-            alt="new home"
+            src="/images/lake-landing-min.jpg"
+            alt="lake"
             width="275"
             height="132"
           />
@@ -218,7 +218,7 @@
               aria-hidden="true"
               decoding="async"
               src="/images/web-design.png"
-              alt="appliance"
+              alt="computer with paint brush"
               width="48"
               height="48"
             />
@@ -235,7 +235,7 @@
               aria-hidden="true"
               decoding="async"
               src="/images/web-programming.png"
-              alt="appliance"
+              alt="computer screen"
               width="48"
               height="48"
             />
@@ -252,7 +252,7 @@
               aria-hidden="true"
               decoding="async"
               src="/images/maintenance.png"
-              alt="appliance"
+              alt="hand holding a gear"
               width="48"
               height="48"
             />
@@ -370,7 +370,7 @@
               loading="lazy"
               decoding="async"
               src="/images/design-team.svg"
-              alt="cabinets"
+              alt="design team"
               width="400"
               height="662"
             />
@@ -390,91 +390,26 @@
               We are a family-owned small business web design and development
               agency specializing in custom-coded websites for small businesses.
             </p>
-            <!-- <p>
-              <strong>A list if you need it:</strong>
-            </p>
-            <ul>
-              <li>
-                <img
-                  aria-hidden="true"
-                  loading="lazy"
-                  decoding="async"
-                  src="/images/check.svg"
-                  alt="check mark"
-                  width="20"
-                  height="20"
-                />
-                <span>List item about something</span>
-              </li>
-              <li>
-                <img
-                  aria-hidden="true"
-                  loading="lazy"
-                  decoding="async"
-                  src="/images/check.svg"
-                  alt="check mark"
-                  width="20"
-                  height="20"
-                />
-                <span>List item about something</span>
-              </li>
-              <li>
-                <img
-                  aria-hidden="true"
-                  loading="lazy"
-                  decoding="async"
-                  src="/images/check.svg"
-                  alt="check mark"
-                  width="20"
-                  height="20"
-                />
-                <span>List item about something</span>
-              </li>
-              <li>
-                <img
-                  aria-hidden="true"
-                  loading="lazy"
-                  decoding="async"
-                  src="/images/check.svg"
-                  alt="check mark"
-                  width="20"
-                  height="20"
-                />
-                <span>List item about something</span>
-              </li>
-              <li>
-                <img
-                  aria-hidden="true"
-                  loading="lazy"
-                  decoding="async"
-                  src="/images/check.svg"
-                  alt="check mark"
-                  width="20"
-                  height="20"
-                />
-                <span>List item about something</span>
-              </li>
-            </ul> -->
             <p>
               We pride ourselves on providing big business services at a small
               business price. We cater to the small business market to bring
               high quality, high performing websites at a a price that can't be
               beat.
             </p>
-            <a class="button-solid" href="/contact.html">More About Us</a>
+            <a class="button-solid" href="/about.html">More About Us</a>
           </div>
           <picture class="image-box">
             <source
               media="(max-width: 600px)"
-              srcset="/images/cabinets2-m.jpg"
+              srcset="/images/family-min.jpg"
             />
-            <source media="(min-width: 601px)" srcset="/images/cabinets2.jpg" />
+            <source media="(min-width: 601px)" srcset="/images/family.jpg" />
             <img
               aria-hidden="true"
               loading="lazy"
               decoding="async"
-              src="/images/cabinets2.jpg"
-              alt="cabinets"
+              src="/images/family-min.jpg"
+              alt="family"
               width="400"
               height="662"
             />
@@ -490,13 +425,19 @@
         <div class="cs-container">
           <!-- Left Image Section -->
           <picture class="cs-left" aria-hidden="true">
-            <source media="(max-width: 600px)" srcset="../images/prof1.jpeg" />
-            <source media="(min-width: 601px)" srcset="../images/prof1.jpeg" />
+            <source
+              media="(max-width: 600px)"
+              srcset="../images/prof1-min.jpeg"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="../images/prof1-min.jpeg"
+            />
             <img
               loading="lazy"
               decoding="async"
-              src="../images/prof1.jpeg"
-              alt="city"
+              src="../images/prof1-min.jpeg"
+              alt="ryan"
               width="347"
               height="604"
             />
@@ -512,7 +453,7 @@
             <a
               class="button-solid"
               aria-label="read more about our services"
-              href=""
+              href="./about.html"
               >About Us</a
             >
           </div>
@@ -543,7 +484,7 @@
               loading="lazy"
               decoding="async"
               src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/city.jpg"
-              alt="city"
+              alt="meaghan"
               width="347"
               height="604"
             />
@@ -560,7 +501,7 @@
             <a
               class="button-solid"
               aria-label="read more about our services"
-              href=""
+              href="./about.html"
               >About Us</a
             >
           </div>
@@ -578,12 +519,18 @@
           <ul class="cs-card-group">
             <li class="cs-item">
               <picture class="cs-picture" aria-hidden="true">
-                <source media="(max-width: 600px)" srcset="../images/cup.jpg" />
-                <source media="(min-width: 601px)" srcset="../images/cup.jpg" />
+                <source
+                  media="(max-width: 600px)"
+                  srcset="../images/cup-min.jpg"
+                />
+                <source
+                  media="(min-width: 601px)"
+                  srcset="../images/cup-min.jpg"
+                />
                 <img
                   loading="lazy"
-                  decoding="https://csimg.nyc3.digitaloceanspaces.com/Services/living-room.jpg"
-                  alt="living room"
+                  decoding="../images/cup-min.jpg"
+                  alt="cup"
                 />
               </picture>
               <div class="cs-box">
@@ -709,7 +656,7 @@
             loading="lazy"
             decoding="async"
             src="/images/lake-cta.jpg"
-            alt="kitchen cabinets"
+            alt="lake"
             width="1920"
             height="1280"
           />
