@@ -177,45 +177,40 @@
 
     <main>
       <!-- ============================================ -->
-      <!--                    LANDING                   -->
+      <!--                    Hero                      -->
       <!-- ============================================ -->
 
-      <section id="hero">
-        <div class="hero-content">
-          <div class="heroText">
-            <h1 id="home-h">
-              Expert Small Business Web Design and Development
-            </h1>
-            <p>
-              We offer top notch website design, development, maintenance, and
-              hosting at an unbeatable price.
-            </p>
-            <a
-              class="button-solid"
-              href="./contact.html"
-              target="_blank"
-              rel="noopener"
-            >
-              Get Started Now
-            </a>
-          </div>
+      <section id="hero-3906">
+        <div class="cs-container">
+          <h1 class="cs-title">
+            Construction & Maintenance Experts in New York City
+          </h1>
+          <p class="cs-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. At quis
+            donec eget tellus turpis imperdiet aenean libero.
+          </p>
+          <a href="" class="button-solid">Request Appointment</a>
         </div>
-        <picture>
+
+        <!-- Background Image -->
+        <picture class="cs-background" aria-hidden="true">
           <source
             media="(max-width: 600px)"
-            srcset="/images/lake-landing-m-min.webp"
+            srcset="
+              https://csimg.nyc3.digitaloceanspaces.com/Hero/kitchen-m.jpg
+            "
           />
           <source
             media="(min-width: 601px)"
-            srcset="/images/lake-landing-min.webp"
+            srcset="https://csimg.nyc3.digitaloceanspaces.com/Hero/kitchen.jpg"
           />
           <img
-            aria-hidden="true"
+            loading="lazy"
             decoding="async"
-            src="/images/lake-landing-min.webp"
-            alt="lake"
-            width="275"
-            height="132"
+            src="https://csimg.nyc3.digitaloceanspaces.com/Hero/kitchen.jpg"
+            alt="kitchen"
+            width="2250"
+            height="1500"
           />
         </picture>
       </section>
@@ -224,213 +219,184 @@
       <!--                  Services                    -->
       <!-- ============================================ -->
 
-      <section id="services" class="services">
-        <!-- Get Icons From flaticon.com -->
-        <div class="card">
-          <picture>
-            <img
-              aria-hidden="true"
-              decoding="async"
-              src="/images/web-design.png"
-              alt="computer with paint brush"
-              width="48"
-              height="48"
-            />
-          </picture>
-          <h2>Design</h2>
-          <p>
-            Clean, modern design focused on attracting and converting customers
-            for your business.
-          </p>
-        </div>
-        <div class="card">
-          <picture>
-            <img
-              aria-hidden="true"
-              decoding="async"
-              src="/images/web-programming.png"
-              alt="computer screen"
-              width="48"
-              height="48"
-            />
-          </picture>
-          <h2>Development</h2>
-          <p>
-            100% custom-coded website that will outperform any page builder
-            website.
-          </p>
-        </div>
-        <div class="card">
-          <picture>
-            <img
-              aria-hidden="true"
-              decoding="async"
-              src="/images/maintenance.png"
-              alt="hand holding a gear"
-              width="48"
-              height="48"
-            />
-          </picture>
-          <h2>Maintenance</h2>
-          <p>
-            Standard package includes hosting your website as well as unlimited
-            lifetime edits.
-          </p>
-        </div>
-      </section>
-
-      <!-- ============================================ -->
-      <!--                   About                      -->
-      <!-- ============================================ -->
-
-      <section id="sidebyside" class="sidebyside">
+      <section id="services">
         <div class="container">
-          <div class="content">
-            <h2 class="title">WHAT WE DO</h2>
-            <p>
-              Custom coded, standard 5 page small business websites for $0 down
-              and just $100 a month. Every line of code is custom written to
-              ensure the highest possible performance.
-            </p>
-            <p>
-              <strong>With Us You Get:</strong>
-            </p>
-            <ul>
-              <li>
+          <h2 class="cs-title">
+            We are a Studio Based in New York, that Provides Hassle-Free
+            Backyard Transformation with Artistic Solutions.
+          </h2>
+          <p class="cs-text">
+            Call Us To Schedule An Appointment, Our Team Is Ready
+          </p>
+          <!-- Image Grid -->
+          <div class="cs-mosaic">
+            <!-- Left Grid -->
+            <picture class="cs-picture cs-picture1">
+              <source
+                media="(max-width: 699px)"
+                srcset="
+                  https://csimg.nyc3.digitaloceanspaces.com/Services/gardening-mosaic.jpg
+                "
+              />
+              <source
+                media="(min-width: 700px)"
+                srcset="
+                  https://csimg.nyc3.digitaloceanspaces.com/Services/gardening-mosaic.jpg
+                "
+              />
+              <img
+                loading="lazy"
+                decoding="async"
+                src="https://csimg.nyc3.digitaloceanspaces.com/Services/gardening-mosaic.jpg"
+                alt="person gardening"
+                width="348"
+                height="433"
+              />
+            </picture>
+            <!-- Right Grid -->
+            <div class="cs-mosaic-right">
+              <!-- Top Strip Image -->
+              <picture class="cs-picture cs-picture2">
+                <source
+                  media="(max-width: 699px)"
+                  srcset="
+                    https://csimg.nyc3.digitaloceanspaces.com/Services/path-strip.jpg
+                  "
+                />
+                <source
+                  media="(min-width: 700px)"
+                  srcset="
+                    https://csimg.nyc3.digitaloceanspaces.com/Services/path-strip.jpg
+                  "
+                />
                 <img
-                  aria-hidden="true"
                   loading="lazy"
                   decoding="async"
-                  src="/images/check.svg"
-                  alt="check mark"
-                  width="20"
-                  height="20"
+                  src="https://csimg.nyc3.digitaloceanspaces.com/Services/path-strip.jpg"
+                  alt="garden pathway"
+                  width="714"
+                  height="138"
                 />
-                <span>Website Design & Development</span>
-              </li>
-              <li>
+              </picture>
+              <!-- Bottom 2 Images -->
+              <picture class="cs-picture cs-picture3">
+                <source
+                  media="(max-width: 699px)"
+                  srcset="
+                    https://csimg.nyc3.digitaloceanspaces.com/Services/urban-sqaure.jpg
+                  "
+                />
+                <source
+                  media="(min-width: 700px)"
+                  srcset="
+                    https://csimg.nyc3.digitaloceanspaces.com/Services/urban-sqaure.jpg
+                  "
+                />
                 <img
-                  aria-hidden="true"
                   loading="lazy"
                   decoding="async"
-                  src="/images/check.svg"
-                  alt="check mark"
-                  width="20"
-                  height="20"
+                  src="https://csimg.nyc3.digitaloceanspaces.com/Services/urban-sqaure.jpg"
+                  alt="person gardening"
+                  width="348"
+                  height="275"
                 />
-                <span>Website Hosting Included</span>
-              </li>
-              <li>
+              </picture>
+              <picture class="cs-picture cs-picture4">
+                <source
+                  media="(max-width: 699px)"
+                  srcset="
+                    https://csimg.nyc3.digitaloceanspaces.com/Services/people-square.jpg
+                  "
+                />
+                <source
+                  media="(min-width: 700px)"
+                  srcset="
+                    https://csimg.nyc3.digitaloceanspaces.com/Services/people-square.jpg
+                  "
+                />
                 <img
-                  aria-hidden="true"
                   loading="lazy"
                   decoding="async"
-                  src="/images/check.svg"
-                  alt="check mark"
-                  width="20"
-                  height="20"
+                  src="https://csimg.nyc3.digitaloceanspaces.com/Services/people-square.jpg"
+                  alt="person gardening"
+                  width="348"
+                  height="275"
                 />
-                <span>Unlimited Edits</span>
-              </li>
-              <li>
-                <img
-                  aria-hidden="true"
-                  loading="lazy"
-                  decoding="async"
-                  src="/images/check.svg"
-                  alt="check mark"
-                  width="20"
-                  height="20"
-                />
-                <span
-                  >Fully Responsive Website Perfect for Mobile or Desktop</span
-                >
-              </li>
-              <li>
-                <img
-                  aria-hidden="true"
-                  loading="lazy"
-                  decoding="async"
-                  src="/images/check.svg"
-                  alt="check mark"
-                  width="20"
-                  height="20"
-                />
-                <span>Mobile-First Design</span>
-              </li>
-            </ul>
-            <p>
-              We specialize in custom coded websites for small businesses
-              created with a mobile-first design. We know that more than 60% of
-              all web traffic comes from mobile devices so we ensure your
-              customers get a quality experience no matter what device they are
-              on.
-            </p>
-            <a class="button-solid" href="/services.html"
-              >More About Our Services</a
-            >
+              </picture>
+            </div>
           </div>
-          <picture class="image-box">
-            <source
-              media="(max-width: 600px)"
-              srcset="/images/design-team.svg"
-            />
-            <source
-              media="(min-width: 601px)"
-              srcset="/images/design-team.svg"
-            />
-            <img
-              aria-hidden="true"
-              loading="lazy"
-              decoding="async"
-              src="/images/design-team.svg"
-              alt="design team"
-              width="400"
-              height="662"
-            />
-          </picture>
-        </div>
-      </section>
-
-      <!-- ============================================ -->
-      <!--          Extra Content For Ranking           -->
-      <!-- ============================================ -->
-
-      <section id="sidebyside-reverse">
-        <div class="container">
-          <div class="content">
-            <h2 class="title">ABOUT US</h2>
-            <p>
-              We are a family-owned small business web design and development
-              agency specializing in custom-coded websites for small businesses.
-            </p>
-            <p>
-              We pride ourselves on providing big business services at a small
-              business price. We cater to the small business market to bring
-              high quality, high performing websites at a a price that can't be
-              beat.
-            </p>
-            <a class="button-solid" href="/about.html">More About Us</a>
-          </div>
-          <picture class="image-box">
-            <source
-              media="(max-width: 600px)"
-              srcset="/images/family-min.webp"
-            />
-            <source
-              media="(min-width: 601px)"
-              srcset="/images/family-min.webp"
-            />
-            <img
-              aria-hidden="true"
-              loading="lazy"
-              decoding="async"
-              src="/images/family-min.webp"
-              alt="family"
-              width="400"
-              height="662"
-            />
-          </picture>
+          <!-- Bottom UL -->
+          <ul class="cs-card-group">
+            <li class="cs-item">
+              <img
+                class="cs-item-image"
+                loading="lazy"
+                decoding="async"
+                src="https://csimg.nyc3.digitaloceanspaces.com/Services/pinwheel.svg"
+                alt="pinwheel icon"
+                width="68"
+                height="68"
+              />
+              <h3 class="cs-heading3">Pressure Washing</h3>
+              <p class="cs-item-text">
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Nunc
+                scelerisque viverra mauris in aliquam sem fringilla.
+              </p>
+              <a
+                aria-label="read more about (blank)"
+                href=""
+                class="cs-item-link"
+                >Read More</a
+              >
+            </li>
+            <li class="cs-item">
+              <img
+                class="cs-item-image"
+                loading="lazy"
+                decoding="async"
+                src="https://csimg.nyc3.digitaloceanspaces.com/Services/leaf.svg"
+                alt="leaf graphic"
+                width="68"
+                height="68"
+              />
+              <h3 class="cs-heading3">Drywall Sealing</h3>
+              <p class="cs-item-text">
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Nunc
+                scelerisque viverra mauris in aliquam sem fringilla.
+              </p>
+              <a
+                aria-label="read more about (blank)"
+                href=""
+                class="cs-item-link"
+                >Read More</a
+              >
+            </li>
+            <li class="cs-item">
+              <img
+                class="cs-item-image"
+                loading="lazy"
+                decoding="async"
+                src="https://csimg.nyc3.digitaloceanspaces.com/Services/bubble-wheel.svg"
+                alt="bubble wheel icon"
+                width="68"
+                height="68"
+              />
+              <h3 class="cs-heading3">Custom Cabinetry</h3>
+              <p class="cs-item-text">
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Nunc
+                scelerisque viverra mauris in aliquam sem fringilla.
+              </p>
+              <a
+                aria-label="read more about (blank)"
+                href=""
+                class="cs-item-link"
+                >Read More</a
+              >
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -438,200 +404,662 @@
       <!--                 Side By Side                 -->
       <!-- ============================================ -->
 
-      <section id="sbs-7843">
+      <section id="sbs">
         <div class="cs-container">
           <!-- Left Image Section -->
           <picture class="cs-left" aria-hidden="true">
             <source
               media="(max-width: 600px)"
-              srcset="../images/prof1-min.webp"
+              srcset="
+                https://csimg.nyc3.digitaloceanspaces.com/SideBySide/body-builder-m.jpg
+              "
             />
             <source
               media="(min-width: 601px)"
-              srcset="../images/prof1-min.webp"
+              srcset="
+                https://csimg.nyc3.digitaloceanspaces.com/SideBySide/body-builder.jpg
+              "
             />
             <img
               loading="lazy"
               decoding="async"
-              src="../images/prof1-min.webp"
-              alt="ryan"
-              width="350"
-              height="350"
+              src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/body-builder.jpg"
+              alt="body builder"
+              width="500"
+              height="552"
             />
           </picture>
           <!-- Right Content Section-->
           <div class="cs-right">
-            <span class="cs-topper">Co-Owner/Lead Developer</span>
-            <h2 class="cs-title">Ryan G.</h2>
+            <span class="cs-topper">Small Group Training</span>
+            <h2 class="cs-title">Make your circle healthier Together</h2>
             <p class="cs-text">
-              Ryan is an experienced software developer with the skills and
-              knowledge to bring any idea to life.
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit. Amet
+              minim mollit non deserunt ullamco est sit aliqua dolor do amet
+              sint. Velit officia consequat duis enim velit mollit.
             </p>
             <a
               class="button-solid"
-              aria-label="read more about our services"
-              href="./about.html"
-              >About Us</a
+              aria-label="learn more about our programs"
+              href=""
+              >Learn More</a
             >
           </div>
         </div>
       </section>
 
       <!-- ============================================ -->
-      <!--             Side By Side Reverse             -->
+      <!--               SBS Reverse Pair               -->
       <!-- ============================================ -->
 
-      <section id="sbs-7843-r">
+      <section id="sbs-r">
         <div class="cs-container">
           <!-- Left Image Section -->
           <picture class="cs-left" aria-hidden="true">
             <source
               media="(max-width: 600px)"
-              srcset="../images/meaghan-min.webp"
+              srcset="
+                https://csimg.nyc3.digitaloceanspaces.com/SideBySide/body-builder-m.jpg
+              "
             />
             <source
               media="(min-width: 601px)"
-              srcset="../images/meaghan-min.webp"
+              srcset="
+                https://csimg.nyc3.digitaloceanspaces.com/SideBySide/body-builder.jpg
+              "
             />
             <img
               loading="lazy"
               decoding="async"
-              src="../images/meaghan-min.webp"
-              alt="meaghan"
-              width="350"
-              height="350"
+              src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/body-builder.jpg"
+              alt="body builder"
+              width="500"
+              height="552"
             />
           </picture>
           <!-- Right Content Section-->
           <div class="cs-right">
-            <span class="cs-topper">Co-Owner/Lead Designer</span>
-            <h2 class="cs-title">Meaghan G.</h2>
+            <span class="cs-topper">Small Group Training</span>
+            <h2 class="cs-title">Make your circle healthier Together</h2>
             <p class="cs-text">
-              Meaghan is the creative mind behind Lake Web Design. She handles
-              all website designs, logo creation and any requests for design
-              updates for the life of the website.
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit. Amet
+              minim mollit non deserunt ullamco est sit aliqua dolor do amet
+              sint. Velit officia consequat duis enim velit mollit.
             </p>
             <a
               class="button-solid"
-              aria-label="read more about our services"
-              href="./about.html"
-              >About Us</a
+              aria-label="learn more about our programs"
+              href=""
+              >Learn More</a
             >
           </div>
         </div>
       </section>
 
       <!-- ============================================ -->
-      <!--                   Services                   -->
+      <!--              SBS Reverse Triplet             -->
       <!-- ============================================ -->
 
-      <section id="services-9573">
-        <div class="container">
-          <h2 class="cs-title">OUR PORTFOLIO</h2>
+      <section id="sbs-rt">
+        <div class="cs-container">
+          <!-- Left Image Section -->
+          <picture class="cs-left" aria-hidden="true">
+            <source
+              media="(max-width: 600px)"
+              srcset="
+                https://csimg.nyc3.digitaloceanspaces.com/SideBySide/body-builder-m.jpg
+              "
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="
+                https://csimg.nyc3.digitaloceanspaces.com/SideBySide/body-builder.jpg
+              "
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/body-builder.jpg"
+              alt="body builder"
+              width="500"
+              height="552"
+            />
+          </picture>
+          <!-- Right Content Section-->
+          <div class="cs-right">
+            <span class="cs-topper">Small Group Training</span>
+            <h2 class="cs-title">Make your circle healthier Together</h2>
+            <p class="cs-text">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit. Amet
+              minim mollit non deserunt ullamco est sit aliqua dolor do amet
+              sint. Velit officia consequat duis enim velit mollit.
+            </p>
+            <a
+              class="button-solid"
+              aria-label="learn more about our programs"
+              href=""
+              >Learn More</a
+            >
+          </div>
+        </div>
+      </section>
 
-          <ul class="cs-card-group">
+      <!-- ============================================ -->
+      <!--                   Stats                      -->
+      <!-- ============================================ -->
+
+      <section id="stats">
+        <div class="cs-container">
+          <span class="cs-topper">Why Work with Us</span>
+          <h2 class="cs-title">Our Numbers Speak For Themselves</h2>
+          <p class="cs-text">
+            Facilisis condimentum viverra scelerisque ac morbi sit sed. Turpis
+            sagittis in blandit eleifend tortor ullamcorper eu placerat. Et orci
+            felis volutpat, etiam vitae egestas volutpat pulvinar.
+          </p>
+          <ul class="cs-stats-group">
             <li class="cs-item">
-              <picture class="cs-picture" aria-hidden="true">
-                <source media="(max-width: 600px)" srcset="../images/cup.jpg" />
-                <source media="(min-width: 601px)" srcset="../images/cup.jpg" />
-                <img loading="lazy" decoding="../images/cup.jpg" alt="cup" />
-              </picture>
-              <div class="cs-box">
-                <h2 class="cs-heading2">Custom Creations</h2>
-                <div class="cs-content-group">
-                  <p class="cs-item-p">
-                    Website for a small business specializing in creating custom
-                    items.
-                  </p>
-                  <a
-                    class="cs-link"
-                    target="_blank"
-                    aria-label="read more about foyers"
-                    href="https://www.customcreationsbyangela.com/"
-                    >View Site</a
-                  >
-                </div>
-              </div>
+              <span class="cs-number">40+</span>
+              <span class="cs-stat-text">Years Experience</span>
             </li>
             <li class="cs-item">
-              <picture class="cs-picture" aria-hidden="true">
-                <source
-                  media="(max-width: 600px)"
-                  srcset="
-                    https://csimg.nyc3.digitaloceanspaces.com/Services/posh-bathroom-m.jpg
-                  "
-                />
-                <source
-                  media="(min-width: 601px)"
-                  srcset="
-                    https://csimg.nyc3.digitaloceanspaces.com/Services/posh-bathroom.jpg
-                  "
-                />
-                <img
-                  loading="lazy"
-                  decoding="https://csimg.nyc3.digitaloceanspaces.com/Services/posh-bathroom.jpg"
-                  alt="living room"
-                  width="348"
-                  height="433"
-                />
-              </picture>
-              <div class="cs-box">
-                <h2 class="cs-heading2">Your Site Here</h2>
-                <div class="cs-content-group">
-                  <p class="cs-item-p">
-                    Interested in a brand new, modern, fast, accessible and
-                    sleek website for your small business, click below to get
-                    started.
-                  </p>
-                  <a
-                    class="cs-link"
-                    aria-label="read more about foyers"
-                    href="./contact.html"
-                    >Contact Us</a
-                  >
-                </div>
-              </div>
+              <span class="cs-number">4</span>
+              <span class="cs-stat-text">Experienced Staff</span>
             </li>
             <li class="cs-item">
-              <picture class="cs-picture" aria-hidden="true">
-                <source
-                  media="(max-width: 600px)"
-                  srcset="
-                    https://csimg.nyc3.digitaloceanspaces.com/Services/living-room-m.jpg
-                  "
-                />
-                <source
-                  media="(min-width: 601px)"
-                  srcset="
-                    https://csimg.nyc3.digitaloceanspaces.com/Services/living-room.jpg
-                  "
-                />
-                <img
-                  loading="lazy"
-                  decoding="https://csimg.nyc3.digitaloceanspaces.com/Services/living-room.jpg"
-                  alt="living room"
-                  width="348"
-                  height="433"
-                />
-              </picture>
-              <div class="cs-box">
-                <h2 class="cs-heading2">Your Site Here</h2>
-                <div class="cs-content-group">
-                  <p class="cs-item-p">
-                    Interested in a brand new, modern, fast, accessible and
-                    sleek website for your small business, click below to get
-                    started.
-                  </p>
-                  <a
-                    class="cs-link"
-                    aria-label="read more about foyers"
-                    href="./contact.html"
-                    >Contact Us</a
-                  >
-                </div>
-              </div>
+              <span class="cs-number">100+</span>
+              <span class="cs-stat-text">Happy Clients</span>
+            </li>
+            <li class="cs-item">
+              <span class="cs-number">1</span>
+              <span class="cs-stat-text">Year Warranty</span>
             </li>
           </ul>
+        </div>
+        <!--Background Image-->
+        <picture aria-hidden="true" class="cs-background">
+          <source
+            media="(max-width: 600px)"
+            srcset="https://csimg.nyc3.digitaloceanspaces.com/Stats/bg-m.jpg"
+          />
+          <source
+            media="(min-width: 601px)"
+            srcset="https://csimg.nyc3.digitaloceanspaces.com/Stats/bg.jpg"
+          />
+          <img
+            loading="lazy"
+            decoding="async"
+            src="https://csimg.nyc3.digitaloceanspaces.com/Stats/bg.jpg"
+            alt="brick wall"
+            width="1920"
+            height="1282"
+          />
+        </picture>
+        <a href="" class="button-solid">Contact Us</a>
+      </section>
+
+      <section id="why-choose">
+        <div class="container">
+          <div class="cs-content-group">
+            <span class="cs-topper">Why Choose Us</span>
+            <h2 class="cs-title">
+              Et orci volutpat, back up generator installations
+            </h2>
+            <p class="cs-text">
+              Facilisis condimentum viverra scelerisque ac morbi sit sed. Turpis
+              sagittis in blandit eleifend tortor ullamcorper eu placerat. Et
+              orci felis volutpat, etiam vitae egestas volutpat pulvinar.
+            </p>
+            <ul class="cs-ul">
+              <li class="cs-li">
+                <img
+                  class="cs-li-img"
+                  aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
+                  src="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/yellow-check.svg"
+                  alt="checkmark"
+                  width="27"
+                  height="27"
+                />
+                Clean Work
+              </li>
+              <li class="cs-li">
+                <img
+                  class="cs-li-img"
+                  aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
+                  src="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/yellow-check.svg"
+                  alt="checkmark"
+                  width="27"
+                  height="27"
+                />
+                Attention To Detail
+              </li>
+              <li class="cs-li">
+                <img
+                  class="cs-li-img"
+                  aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
+                  src="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/yellow-check.svg"
+                  alt="checkmark"
+                  width="27"
+                  height="27"
+                />
+                Punctual
+              </li>
+              <li class="cs-li">
+                <img
+                  class="cs-li-img"
+                  aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
+                  src="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/yellow-check.svg"
+                  alt="checkmark"
+                  width="27"
+                  height="27"
+                />
+                Quality Guaranteed
+              </li>
+            </ul>
+            <a href="" class="button-solid">Request A Quote Today</a>
+          </div>
+        </div>
+        <!-- Right Image -->
+        <picture class="cs-picture">
+          <source
+            media="(max-width: 600px)"
+            srcset="
+              https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/lightbulb-m.jpg
+            "
+          />
+          <source
+            media="(min-width: 601px)"
+            srcset="
+              https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/lightbulb.jpg
+            "
+          />
+          <img
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/lightbulb.jpg"
+            alt="lightbulbs on a wire"
+            width="858"
+            height="781"
+          />
+        </picture>
+      </section>
+
+      <!-- ============================================ -->
+      <!--                   Gallery                    -->
+      <!-- ============================================ -->
+
+      <section id="gallery">
+        <div class="container">
+          <span class="cs-topper">Why Choose Us</span>
+          <h2 class="cs-title">
+            Et orci volutpat, back up generator installations
+          </h2>
+          <div class="cs-image-group">
+            <!-- Image 1 -->
+            <a class="cs-item" href="">
+              <picture class="cs-picture">
+                <source
+                  media="(max-width: 600px)"
+                  srcset="
+                    https://csimg.nyc3.digitaloceanspaces.com/Gallery/house1-m.jpg
+                  "
+                />
+                <source
+                  media="(min-width: 601px)"
+                  srcset="
+                    https://csimg.nyc3.digitaloceanspaces.com/Gallery/house1.jpg
+                  "
+                />
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/house1.jpg"
+                  alt="fancy house"
+                  width="346"
+                  height="346"
+                />
+              </picture>
+              <!-- Hover Box -->
+              <div class="cs-hover-box">
+                <picture class="cs-icon">
+                  <img
+                    loading="lazy"
+                    decoding="async"
+                    src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orange-arrow-right.svg"
+                    alt="fancy house"
+                    width="20"
+                    height="20"
+                  />
+                </picture>
+                <h3 class="cs-heading3">Modern Architectual Design</h3>
+                <p class="cs-hover-box-p">
+                  Li Europan lingues es membres del sam familie. Lor separat
+                  existentie es un myth.
+                </p>
+              </div>
+            </a>
+            <!-- Image 2 -->
+            <a class="cs-item" href="">
+              <picture class="cs-picture">
+                <source
+                  media="(max-width: 600px)"
+                  srcset="
+                    https://csimg.nyc3.digitaloceanspaces.com/Gallery/house2-m.jpg
+                  "
+                />
+                <source
+                  media="(min-width: 601px)"
+                  srcset="
+                    https://csimg.nyc3.digitaloceanspaces.com/Gallery/house2.jpg
+                  "
+                />
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/house2.jpg"
+                  alt="modern house"
+                  width="346"
+                  height="346"
+                />
+              </picture>
+              <!-- Hover Box -->
+              <div class="cs-hover-box">
+                <picture class="cs-icon">
+                  <img
+                    loading="lazy"
+                    decoding="async"
+                    src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orange-arrow-right.svg"
+                    alt="fancy house"
+                    width="20"
+                    height="20"
+                  />
+                </picture>
+                <h3 class="cs-heading3">Modern Architectual Design</h3>
+                <p class="cs-hover-box-p">
+                  Li Europan lingues es membres del sam familie. Lor separat
+                  existentie es un myth.
+                </p>
+              </div>
+            </a>
+            <!-- Image 3 -->
+            <a class="cs-item" href="">
+              <picture class="cs-picture">
+                <source
+                  media="(max-width: 600px)"
+                  srcset="
+                    https://csimg.nyc3.digitaloceanspaces.com/Gallery/house3-m.jpg
+                  "
+                />
+                <source
+                  media="(min-width: 601px)"
+                  srcset="
+                    https://csimg.nyc3.digitaloceanspaces.com/Gallery/house1.jpg
+                  "
+                />
+                <img
+                  aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
+                  src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/house1.jpg"
+                  alt="modern home at night"
+                  width="346"
+                  height="346"
+                />
+              </picture>
+              <!-- Hover Box -->
+              <div class="cs-hover-box">
+                <picture class="cs-icon">
+                  <img
+                    loading="lazy"
+                    decoding="async"
+                    src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orange-arrow-right.svg"
+                    alt="fancy house"
+                    width="20"
+                    height="20"
+                  />
+                </picture>
+                <h3 class="cs-heading3">Modern Architectual Design</h3>
+                <p class="cs-hover-box-p">
+                  Li Europan lingues es membres del sam familie. Lor separat
+                  existentie es un myth.
+                </p>
+              </div>
+            </a>
+            <!-- Image 4 -->
+            <a class="cs-item" href="">
+              <picture class="cs-picture">
+                <source
+                  media="(max-width: 600px)"
+                  srcset="
+                    https://csimg.nyc3.digitaloceanspaces.com/Gallery/house4-m.jpg
+                  "
+                />
+                <source
+                  media="(min-width: 601px)"
+                  srcset="
+                    https://csimg.nyc3.digitaloceanspaces.com/Gallery/house4.jpg
+                  "
+                />
+                <img
+                  aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
+                  src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/house4.jpg"
+                  alt="modern home"
+                  width="346"
+                  height="346"
+                />
+              </picture>
+              <!-- Hover Box -->
+              <div class="cs-hover-box">
+                <picture class="cs-icon">
+                  <img
+                    loading="lazy"
+                    decoding="async"
+                    src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orange-arrow-right.svg"
+                    alt="fancy house"
+                    width="20"
+                    height="20"
+                  />
+                </picture>
+                <h3 class="cs-heading3">Modern Architectual Design</h3>
+                <p class="cs-hover-box-p">
+                  Li Europan lingues es membres del sam familie. Lor separat
+                  existentie es un myth.
+                </p>
+              </div>
+            </a>
+            <!-- Image 5 -->
+            <a class="cs-item" href="">
+              <picture class="cs-picture">
+                <source
+                  media="(max-width: 600px)"
+                  srcset="
+                    https://csimg.nyc3.digitaloceanspaces.com/Gallery/house5-m.jpg
+                  "
+                />
+                <source
+                  media="(min-width: 601px)"
+                  srcset="
+                    https://csimg.nyc3.digitaloceanspaces.com/Gallery/house5.jpg
+                  "
+                />
+                <img
+                  aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
+                  src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/house5.jpg"
+                  alt="appliance"
+                  width="346"
+                  height="346"
+                />
+              </picture>
+              <!-- Hover Box -->
+              <div class="cs-hover-box">
+                <picture class="cs-icon">
+                  <img
+                    loading="lazy"
+                    decoding="async"
+                    src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orange-arrow-right.svg"
+                    alt="fancy house"
+                    width="20"
+                    height="20"
+                  />
+                </picture>
+                <h3 class="cs-heading3">Modern Architectual Design</h3>
+                <p class="cs-hover-box-p">
+                  Li Europan lingues es membres del sam familie. Lor separat
+                  existentie es un myth.
+                </p>
+              </div>
+            </a>
+            <!-- Image 6 -->
+            <a class="cs-item" href="">
+              <picture class="cs-picture">
+                <source
+                  media="(max-width: 600px)"
+                  srcset="
+                    https://csimg.nyc3.digitaloceanspaces.com/Gallery/house6-m.jpg
+                  "
+                />
+                <source
+                  media="(min-width: 601px)"
+                  srcset="
+                    https://csimg.nyc3.digitaloceanspaces.com/Gallery/house6.jpg
+                  "
+                />
+                <img
+                  aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
+                  src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/house6.jpg"
+                  alt="modern home"
+                  width="346"
+                  height="346"
+                />
+              </picture>
+              <!-- Hover Box -->
+              <div class="cs-hover-box">
+                <picture class="cs-icon">
+                  <img
+                    loading="lazy"
+                    decoding="async"
+                    src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orange-arrow-right.svg"
+                    alt="fancy house"
+                    width="20"
+                    height="20"
+                  />
+                </picture>
+                <h3 class="cs-heading3">Modern Architectual Design</h3>
+                <p class="cs-hover-box-p">
+                  Li Europan lingues es membres del sam familie. Lor separat
+                  existentie es un myth.
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================ -->
+      <!--                   Reviews                    -->
+      <!-- ============================================ -->
+
+      <section id="reviews">
+        <div class="cs-container">
+          <span class="cs-topper">Our Reviews</span>
+          <h2 class="cs-title">Words From Our Customers</h2>
+          <p class="cs-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dolor
+            volutpat porttitor sagittis nunc nisl. Sagittis sit pellentesque
+            gravida viverra. Leo ut sed euismod tortor risus et. Ornare non
+            neque, leo, ornare. Lorem ipsum dolor sit amet.
+          </p>
+          <ul class="cs-card-group">
+            <!-- Review 1 -->
+            <li class="cs-item">
+              <img
+                class="cs-item-img"
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+                src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile5.png"
+                alt="profile picture"
+                width="80"
+                height="80"
+              />
+              <p class="cs-item-p">
+                Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor
+                habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec
+                sed ullamcorper lectus et. Auctor velit diam fermentum
+                consequat. Feugiat viverra massa urna, volutpat orci imperdiet
+                eget eget.
+              </p>
+              <span class="cs-reviewer">
+                Jon Doe
+                <span class="cs-desc">Homeowner</span>
+              </span>
+              <img
+                class="cs-item-stars"
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+                src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
+                alt="stars"
+                width="96"
+                height="16"
+              />
+            </li>
+            <!-- Review 2 -->
+            <li class="cs-item">
+              <img
+                class="cs-item-img"
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+                src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile-4.png"
+                alt="profile picture"
+                width="80"
+                height="80"
+              />
+              <p class="cs-item-p">
+                Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor
+                habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec
+                sed ullamcorper lectus et. Auctor velit diam fermentum
+                consequat. Feugiat viverra massa urna, volutpat orci imperdiet
+                eget eget.
+              </p>
+              <span class="cs-reviewer">
+                Jane Doe
+                <span class="cs-desc">Homeowner</span>
+              </span>
+              <img
+                class="cs-item-stars"
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+                src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
+                alt="stars"
+                width="96"
+                height="16"
+              />
+            </li>
+          </ul>
+          <a aria-label="read more reviews-8837" href="" class="button-solid"
+            >Read More</a
+          >
         </div>
       </section>
 

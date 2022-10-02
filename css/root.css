@@ -4,7 +4,7 @@
 /* Mobile */
 @media only screen and (min-width: 0em) {
   :root {
-    --primary: #7e849b;
+    --primary: #cc860c;
     --primaryShade: #ffd675;
     --secondary: #dfba74;
     --primaryDark: #dfba74;
@@ -89,41 +89,23 @@
     cursor: pointer;
   }
   .button-solid {
-    font-size: 0.875em;
-    font-weight: bold;
-    text-transform: uppercase;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 1rem;
+    /* 46px - 56px */
+    line-height: clamp(2.875rem, 8vw, 3.5rem);
     text-decoration: none;
+    font-weight: 700;
+    margin: auto;
+    color: #fff;
+    padding: 0 1.5rem;
+    background-color: var(--primary);
     display: inline-block;
-    width: auto;
-    line-height: 3.57142857em;
-    height: 3.57142857em;
-    text-align: center;
-    padding: 0 2.14285714em;
     position: relative;
     z-index: 1;
-    background-color: var(--primary);
-    color: #fff;
-    transition: color 0.3s;
-    transition-delay: 0.1s;
+    transition: background-color 0.3s;
   }
   .button-solid:hover {
-    color: #fff;
-  }
-  .button-solid:hover:before {
-    width: 100%;
-  }
-  .button-solid:before {
-    content: "";
-    position: absolute;
-    display: block;
-    height: 100%;
-    opacity: 1;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    background-color: var(--bodyText);
-    width: 0;
-    transition: width 0.3s;
+    background-color: #000;
   }
   .skip {
     position: absolute;
